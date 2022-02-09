@@ -56,15 +56,63 @@
 		7445AE8B27B3FE5B00913B9C /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				7445AE8C27B3FE5B00913B9C /* AppDelegate.swift */,
-				7445AE8E27B3FE5B00913B9C /* SceneDelegate.swift */,
-				7445AE9027B3FE5B00913B9C /* ViewController.swift */,
-				7445AE9227B3FE5B00913B9C /* Main.storyboard */,
-				7445AE9527B3FE5C00913B9C /* Assets.xcassets */,
-				7445AE9727B3FE5C00913B9C /* LaunchScreen.storyboard */,
-				7445AE9A27B3FE5C00913B9C /* Info.plist */,
+				7445AEA527B3FF7B00913B9C /* Data */,
+				7445AEA427B3FED800913B9C /* Models */,
+				7445AEA127B3FE7D00913B9C /* ViewControllers */,
+				7445AEA027B3FE6E00913B9C /* Storyboards */,
+				7445AEA327B3FE9700913B9C /* Resources */,
+				7445AEA227B3FE8F00913B9C /* App */,
 			);
 			path = ContactList;
+			sourceTree = "<group>";
+		};
+		7445AEA027B3FE6E00913B9C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7445AE9227B3FE5B00913B9C /* Main.storyboard */,
+				7445AE9727B3FE5C00913B9C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7445AEA127B3FE7D00913B9C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7445AE9027B3FE5B00913B9C /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7445AEA227B3FE8F00913B9C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7445AE8C27B3FE5B00913B9C /* AppDelegate.swift */,
+				7445AE8E27B3FE5B00913B9C /* SceneDelegate.swift */,
+				7445AE9A27B3FE5C00913B9C /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7445AEA327B3FE9700913B9C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7445AE9527B3FE5C00913B9C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7445AEA427B3FED800913B9C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7445AEA527B3FF7B00913B9C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = ContactList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = ContactList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
