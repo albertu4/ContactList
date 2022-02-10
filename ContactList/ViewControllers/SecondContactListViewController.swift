@@ -29,14 +29,14 @@ class SecondContactListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactID", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        let contact = persons[indexPath.section]
+        let person = persons[indexPath.section]
         
         if indexPath.row == 0 {
             content.image = UIImage(systemName: "phone.fill")
-            content.text = contact.phoneNumber
+            content.text = person.phoneNumber
         } else {
             content.image = UIImage(systemName: "mail.fill")
-            content.text = contact.email
+            content.text = person.email
         }
         
         cell.contentConfiguration = content

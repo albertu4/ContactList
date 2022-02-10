@@ -17,7 +17,7 @@
 		7445AEAB27B4052D00913B9C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7445AEAA27B4052C00913B9C /* DataManager.swift */; };
 		7445AEAD27B4054900913B9C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7445AEAC27B4054900913B9C /* Person.swift */; };
 		7445AEAF27B423B300913B9C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7445AEAE27B423B300913B9C /* MainTabBarController.swift */; };
-		745A93EF27B554E9000EF2C7 /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745A93EE27B554E9000EF2C7 /* ContactDetailsViewController.swift */; };
+		745A93EF27B554E9000EF2C7 /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745A93EE27B554E9000EF2C7 /* PersonDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		7445AEAA27B4052C00913B9C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		7445AEAC27B4054900913B9C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		7445AEAE27B423B300913B9C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		745A93EE27B554E9000EF2C7 /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
+		745A93EE27B554E9000EF2C7 /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 				7445AEA627B403C000913B9C /* FirstContactListViewController.swift */,
 				7445AEA827B403D400913B9C /* SecondContactListViewController.swift */,
 				7445AEAE27B423B300913B9C /* MainTabBarController.swift */,
-				745A93EE27B554E9000EF2C7 /* ContactDetailsViewController.swift */,
+				745A93EE27B554E9000EF2C7 /* PersonDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -207,7 +207,7 @@
 				7445AE8D27B3FE5B00913B9C /* AppDelegate.swift in Sources */,
 				7445AEAB27B4052D00913B9C /* DataManager.swift in Sources */,
 				7445AE8F27B3FE5B00913B9C /* SceneDelegate.swift in Sources */,
-				745A93EF27B554E9000EF2C7 /* ContactDetailsViewController.swift in Sources */,
+				745A93EF27B554E9000EF2C7 /* PersonDetailsViewController.swift in Sources */,
 				7445AEA927B403D400913B9C /* SecondContactListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

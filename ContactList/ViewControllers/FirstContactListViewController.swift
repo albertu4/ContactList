@@ -19,16 +19,16 @@ class FirstContactListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactID", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        let contact = persons[indexPath.row]
+        let person = persons[indexPath.row]
         
-        content.text = contact.fullName
+        content.text = person.fullName
         cell.contentConfiguration = content
         return cell
     }
     
     //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let contactDetailsVC = segue.destination as? ContactDetailsViewController else { return }
+        guard let contactDetailsVC = segue.destination as? PersonDetailsViewController else { return }
         contactDetailsVC.person = sender as? Person
     }
     
