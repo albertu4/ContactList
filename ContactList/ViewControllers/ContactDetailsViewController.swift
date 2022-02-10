@@ -8,6 +8,7 @@
 import UIKit
 
 class ContactDetailsViewController: UIViewController {
+    
     @IBOutlet var personPhoneNumber: UILabel!
     @IBOutlet var personEmail: UILabel!
     

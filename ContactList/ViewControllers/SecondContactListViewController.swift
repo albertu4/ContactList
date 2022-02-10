@@ -10,15 +10,14 @@ import UIKit
 class SecondContactListViewController: UITableViewController {
     
     var persons: [Person] = []
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    
+    // MARK: - Table view Sections title
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let contact = persons[section]
+        return contact.fullName
     }
-
-    // MARK: - Table view data source
-
-
+    
+    //MARK: - Table view Cells data
     override func numberOfSections(in tableView: UITableView) -> Int {
         persons.count
     }
@@ -33,18 +32,15 @@ class SecondContactListViewController: UITableViewController {
         let contact = persons[indexPath.section]
         
         if indexPath.row == 0 {
+            content.image = UIImage(systemName: "phone.fill")
             content.text = contact.phoneNumber
         } else {
+            content.image = UIImage(systemName: "mail.fill")
             content.text = contact.email
         }
         
         cell.contentConfiguration = content
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let contact = persons[section]
-        return contact.fullName
     }
 }
 

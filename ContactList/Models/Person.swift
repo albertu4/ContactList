@@ -18,17 +18,23 @@ struct Person {
     }
     
     static func getContact() -> [Person] {
+        names.shuffle()
+        surnames.shuffle()
+        phoneNumbers.shuffle()
+        emails.shuffle()
+        
         var contacts: [Person] = []
+        var index = 0
         for _ in 1...names.count {
             let person = Person(
-                name: names.randomElement() ?? "",
-                surname: surnames.randomElement() ?? "",
-                phoneNumber: phoneNumbers.randomElement() ?? "",
-                email: emails.randomElement() ?? "")
+                name: names[index],
+                surname: surnames[index],
+                phoneNumber: phoneNumbers[index],
+                email: emails[index])
             contacts.append(person)
+            index += 1
         }
         return contacts
     }
 }
-
 

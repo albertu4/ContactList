@@ -133,7 +133,7 @@
         <scene sceneID="2fP-jv-TTO">
             <objects>
                 <navigationController id="mET-tA-mm0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contacts" image="person.crop.circle" catalog="system" id="80h-8U-RHZ"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.crop.circle.fill" catalog="system" id="80h-8U-RHZ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="py4-NK-8sv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -168,6 +168,7 @@
     </scenes>
     <resources>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

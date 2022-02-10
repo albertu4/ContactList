@@ -10,17 +10,12 @@ import UIKit
 class FirstContactListViewController: UITableViewController {
     
     var persons: [Person] = []
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    // MARK: - Table view data source
     
+    // MARK: - Table view Cells data
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return persons.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactID", for: indexPath)
         var content = cell.defaultContentConfiguration()
@@ -30,15 +25,8 @@ class FirstContactListViewController: UITableViewController {
         cell.contentConfiguration = content
         return cell
     }
-
-     //MARK: - Navigation
-
-//     In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//         Get the new view controller using segue.destination.
-//         Pass the selected object to the new view controller.
-//    }
-
+    
+    //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let contactDetailsVC = segue.destination as? ContactDetailsViewController else { return }
         contactDetailsVC.person = sender as? Person

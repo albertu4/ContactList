@@ -5,7 +5,7 @@
 //  Created by Михаил Иванов on 09.02.2022.
 //
 
-let names = ["John",
+var names = ["John",
              "Peter",
              "Michael",
              "Steve",
@@ -16,7 +16,7 @@ let names = ["John",
              "Mike",
              "Louis"]
 
-let surnames = ["Travolta",
+var surnames = ["Travolta",
                 "Tyson",
                 "Jordan",
                 "Potter",
@@ -27,7 +27,7 @@ let surnames = ["Travolta",
                 "Schwarzenegger",
                 "Seagal"]
 
-let emails = ["mail@gmail.com",
+var emails = ["mail@gmail.com",
               "one@mail.ru",
               "super@mail.com",
               "y@yahoo.com",
@@ -38,7 +38,7 @@ let emails = ["mail@gmail.com",
               "enter@mail.com",
               "space@gmail.com"]
 
-let phoneNumbers = ["1235681448",
+var phoneNumbers = ["1235681448",
                     "4561231232",
                     "007",
                     "88007005060",
