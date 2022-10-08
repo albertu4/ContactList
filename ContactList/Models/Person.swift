@@ -18,24 +18,25 @@ struct Person {
     }
     
     static func getContact() -> [Person] {
+        var persons: [Person] = []
         
-        DataManager.shared.names.shuffle()
-        DataManager.shared.surnames.shuffle()
-        DataManager.shared.phoneNumbers.shuffle()
-        DataManager.shared.emails.shuffle()
+        let names = DataManager.shared.names.shuffled()
+        let surnames = DataManager.shared.surnames.shuffled()
+        let phoneNumbers = DataManager.shared.phoneNumbers.shuffled()
+        let emails = DataManager.shared.emails.shuffled()
         
-        var contacts: [Person] = []
-        var index = 0
-        for _ in 1...DataManager.shared.names.count {
+        let iterationCount = min(names.count, surnames.count, phoneNumbers.count, emails.count)
+        
+        for index in 0..<iterationCount {
             let person = Person(
-                name: DataManager.shared.names[index],
-                surname: DataManager.shared.surnames[index],
-                phoneNumber: DataManager.shared.phoneNumbers[index],
-                email: DataManager.shared.emails[index])
-            contacts.append(person)
-            index += 1
+                name: names[index],
+                surname: surnames[index],
+                phoneNumber: phoneNumbers[index],
+                email: emails[index]
+            )
+            persons.append(person)
         }
-        return contacts
+        return persons
     }
 }
 

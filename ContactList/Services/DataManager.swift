@@ -8,9 +8,8 @@
 class DataManager {
     
     static let shared = DataManager()
-    private init() {}
     
-    var names = ["John",
+    let names = ["John",
                  "Peter",
                  "Michael",
                  "Steve",
@@ -21,7 +20,7 @@ class DataManager {
                  "Mike",
                  "Louis"]
     
-    var surnames = ["Travolta",
+    let surnames = ["Travolta",
                     "Tyson",
                     "Jordan",
                     "Potter",
@@ -32,7 +31,7 @@ class DataManager {
                     "Schwarzenegger",
                     "Seagal"]
     
-    var emails = ["mail@gmail.com",
+    let emails = ["mail@gmail.com",
                   "one@mail.ru",
                   "super@mail.com",
                   "y@yahoo.com",
@@ -43,7 +42,7 @@ class DataManager {
                   "enter@mail.com",
                   "space@gmail.com"]
     
-    var phoneNumbers = ["1235681448",
+    let phoneNumbers = ["1235681448",
                         "4561231232",
                         "007",
                         "88007005060",
@@ -53,4 +52,6 @@ class DataManager {
                         "9999999999",
                         "9887773311",
                         "1735015051"]
+    
+    private init() {}
 }

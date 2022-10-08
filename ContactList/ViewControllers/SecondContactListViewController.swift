@@ -11,7 +11,6 @@ class SecondContactListViewController: UITableViewController {
     
     var persons: [Person] = []
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.sectionHeaderTopPadding = 0
@@ -33,11 +32,11 @@ class SecondContactListViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         persons.count
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactID", for: indexPath)
         var content = cell.defaultContentConfiguration()
@@ -55,4 +54,3 @@ class SecondContactListViewController: UITableViewController {
         return cell
     }
 }
-

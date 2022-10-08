@@ -16,7 +16,6 @@ class FirstContactListViewController: UITableViewController {
         navigationItem.leftBarButtonItem = editButtonItem
     }
     
-    
     // MARK: - Table view Cells data
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         persons.count
@@ -45,7 +44,6 @@ class FirstContactListViewController: UITableViewController {
         let currentContact = persons.remove(at: sourceIndexPath.row)
         persons.insert(currentContact, at: destinationIndexPath.row)
     }
-    
     
     //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

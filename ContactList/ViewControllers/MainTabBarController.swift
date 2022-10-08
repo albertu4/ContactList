@@ -29,6 +29,5 @@ class MainTabBarController: UITabBarController {
             }
         }
     }
-    
 }
 
