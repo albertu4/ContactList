@@ -88,10 +88,10 @@
 		7445AEA127B3FE7D00913B9C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7445AEA627B403C000913B9C /* FirstContactListViewController.swift */,
-				7445AEA827B403D400913B9C /* SecondContactListViewController.swift */,
 				7445AEAE27B423B300913B9C /* MainTabBarController.swift */,
+				7445AEA627B403C000913B9C /* FirstContactListViewController.swift */,
 				745A93EE27B554E9000EF2C7 /* PersonDetailsViewController.swift */,
+				7445AEA827B403D400913B9C /* SecondContactListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
